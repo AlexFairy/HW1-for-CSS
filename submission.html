@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Submission for Cookie Recipes!</title>
+    <link rel="stylesheet" href="HW1cssSubmission.css">
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>Please fill out the form below and follow the instructions</h1>
+    <form action="/register" method="post">
+    <fieldset>
+      <legend>Registration</legend>
+
+      <label for="first-name" id="first-name" >First Name:</label>
+      <input type="text" id="first-name" name="first-name" min="1" max="16" required>
+      <label for="Second-name" id="first-name" >Last Name:</label>
+      <input type="text" id="first-name" name="Second-name" min="1" max="16" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <div role="alert" aria-live="assertive">Please enter a valid email address.</div>
+    </fieldset>
+    </form>
+
+    <form action="/submission" method="post">
+      <fieldset>
+        <legend>Recipe Submission</legend>
+  
+        <label for="recipe-name" id="recipe-name">Name of Recipe:</label>
+        <input type="text" id="recipe-name" name="recipe-name" min="3" max="30" required>
+        <label for="ingredients" id="ingredients">Ingredients:</label>
+        <input type="text" id="ingredients" name="ingredients">
+        <label for="steps" id="steps" >Steps:</label>
+        <input type="text" id="steps" name="steps" required>
+        <button type="submit">Submit</button>
+      </fieldset>
+
+      <p>Return to the Cookie Recipe page here!</p>
+      <a href="http://127.0.0.1:5500/HTML/CSS/JS/HW1css.html">Click Here!</a>
+
+    </form>
+  </body>
+</html>
